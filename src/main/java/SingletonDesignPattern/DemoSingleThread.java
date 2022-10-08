@@ -1,0 +1,12 @@
+package SingletonDesignPattern;
+
+
+public class DemoSingleThread {
+    public static void main(String[] args) {
+        System.out.println("If you see the same value , then singleton was (yay!)"+"\n"+"If you see difference values, then 2 singletons were created (boo!!)"+"\n\n"+"RESULT:"+"\n");
+        Singleton singleton=Singleton.getInstance("FOO");
+        Singleton anotherSingleton = Singleton.getInstance("BAR");
+        System.out.println(anotherSingleton.value);
+        System.out.println(anotherSingleton);
+    }
+}
